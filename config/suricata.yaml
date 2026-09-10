@@ -1,0 +1,11 @@
+# Suricata configuration - relevant sections only
+
+vars:
+  address-groups:
+    HOME_NET: "[192.168.10.0/24]"
+
+af-packet:
+  - interface: enp0s8
+
+rule-files:
+  - /etc/suricata/rules/local.rules
